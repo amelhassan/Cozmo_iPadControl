@@ -59,6 +59,13 @@
      <Compile Include="Assets\RosSharp\ROSBridgeClient\Operation.cs" />
      <Compile Include="Assets\RosSharp\ROSBridgeClient\PointCloud.cs" />
      <Compile Include="Assets\RosSharp\ROSBridgeClient\RosSocket.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\FileServer\GetBinaryFile.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\FileServer\SaveBinaryFile.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\RosApi\GetParam.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\RosApi\Nodes.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\RosApi\SetParam.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\RosApi\Topics.cs" />
+     <Compile Include="Assets\RosSharp\ROSBridgeClient\Services\Standard\Trigger.cs" />
      <Compile Include="Assets\RosSharp\ROSBridgeClient\UrdfImporter.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Extensions\StandardHeaderExtensions.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
@@ -87,6 +94,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\ClockTimePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\Publisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\RosConnector.cs" />
+     <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\ServiceProvider.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\Subscriber.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\UnityTimePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\UrdfComponents\JointLimitsManager.cs" />
@@ -104,6 +112,7 @@
      <Compile Include="Assets\Scripts\CustomRosSharp\PeopleReceiver.cs" />
      <Compile Include="Assets\Scripts\CustomRosSharp\PoseArrayReceiver.cs" />
      <Compile Include="Assets\Scripts\CustomRosSharp\PoseWithCovarianceStampedReceiver.cs" />
+     <Compile Include="Assets\Scripts\CustomRosSharp\TeleopProvider.cs" />
      <Compile Include="Assets\Scripts\ExtrapolationManager.cs" />
      <Compile Include="Assets\Scripts\HyperCubeTrackableEventHandler.cs" />
      <Compile Include="Assets\Scripts\LaserScanProjector.cs" />

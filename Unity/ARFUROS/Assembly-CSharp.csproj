@@ -94,7 +94,6 @@
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\ClockTimePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\Publisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\RosConnector.cs" />
-     <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\ServiceProvider.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\Subscriber.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosCommuncation\UnityTimePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\UrdfComponents\JointLimitsManager.cs" />

@@ -4,29 +4,29 @@ using rosapi = RosSharp.RosBridgeClient.Services.RosApi;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class TeleopProvider : ServiceProvider<rosapi.GetParamRequest, rosapi.GetParamResponse>
+    public class TeleopProvider : MessageProvider
     {
-        public Type MessageType { get { return (typeof(GeometryTwist)); } }
-        private GeometryTwist rawMessage;
+       public override Type MessageType { get { return (typeof(StandardString)); } }
+       private StandardString message;
 
-        private void Awake()
+        private void Start()
         {
-            MessageReception += ReceiveMessage;
+            InitializeMessage();
+        }
+        private void FixedUpdate(){
+                UpdateMessage();
         }
 
-        protected bool ServiceResponseHandler(rosapi.GetParamRequest request, out rosapi.GetParamResponse response){
-        	
-        }
-
-        private void UpdateValues()
+        private void InitializeMessage()
         {
-            rawMessage.linear.x = 2.2;
-            rawMessage.linear.y = 0.0;
-            rawMessage.linear.z = 0.0;
-            rawMessage.angular.x = 0.0;
-            rawMessage.angular.y = 0.0;
-            rawMessage.angular.z = 0.0;
-
+            message = new StandardString();
         }
+
+        private void UpdateMessage()
+        {
+            message.data = "Patience is a virtue";
+            RaiseMessageRelease(new MessageEventArgs(message));
+        }
+
     }
 }
